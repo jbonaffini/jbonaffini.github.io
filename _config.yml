@@ -1,1 +1,7 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-hydeout
+title: James Bonaffini
+email: james.bonaffini@gmail.com
+description: Portfolio & Blog
+github_username: jbonaffini
+paginate: 5
+remote_theme: fongandrew/hydeout
