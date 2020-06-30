@@ -49,11 +49,14 @@ a {
 }
 
 img {
+  display: flex;
   border-radius: 5px;
-  display: block;
   height: auto; // prevent max-width from squishing images with defined height
-  margin: 0 0 1rem;
-  max-width: 100%;
+  width: auto;
+  flex-direction: row ;
+  align-items: center;
+  max-height: 100vh;
+  justify-content: center;
 }
 
 table {

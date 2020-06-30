@@ -1,1 +1,27 @@
 <!-- Optional footer content -->
+
+<a id="myLinks" title="Click To Discover" aria-label="Click To Discover">
+  <img id="myPicture" />
+</a>
+
+<script type="text/javascript">
+  if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+  window.onload = choosePic;
+
+  var myPix = new Array("images/plateau_side.jpg"
+      ,"images/banner_side.jpg"
+      ,"images/palisade_side.jpg"
+      ,"images/dome_side.jpg");
+  var myLinks = new Array("https://www.google.com/search?q=bighorn+plateau"
+      ,"https://www.google.com/search?q=banner+peak"
+      ,"https://www.google.com/search?q=palisade+lakes+california"
+      ,"https://www.google.com/search?q=half+dome");
+}
+
+function choosePic() {
+     var randomNum = Math.floor(Math.random() * myPix.length);
+     document.getElementById("myPicture").src = myPix[randomNum];
+     document.getElementById("myLinks").href = myLinks[randomNum];
+   }
+</script>
