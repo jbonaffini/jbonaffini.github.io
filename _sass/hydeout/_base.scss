@@ -56,7 +56,16 @@ img {
   flex-direction: row ;
   align-items: center;
   max-height: 100vh;
-  justify-content: center;
+}
+
+.imgFooter
+{
+  display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: auto; 
 }
 
 table {
