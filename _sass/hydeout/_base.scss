@@ -58,15 +58,19 @@ img {
   max-height: 100vh;
 }
 
-.imgFooter
-{
+.imgFooter{
   display: flex;
     border-radius: 5px;
     flex-direction: column;
     max-width: 100vw;
     max-height: 100vh;
-    margin: auto; 
+    margin: auto;
 }
+
+.afooter{
+  overflow: hidden
+}
+
 
 table {
   border: 1px solid $border-color;
