@@ -147,6 +147,17 @@ body {
     }
   }
 
+
+  .imgFooter {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+
+  .afooter {
+    margin: 3rem
+  }
+
   /* Undo mobile CSS */
 
   #sidebar,
@@ -206,6 +217,8 @@ body {
       $section-spacing * 2
       $section-spacing * 2
       0;
+    padding-right: 6rem;
+    padding-left: 4rem;
 
     @if $layout-reverse {
       margin-right: $sidebar-width;
@@ -230,8 +243,9 @@ body {
     }
 
     > * {
-      max-width: 38rem;
+      // max-width: 38rem;
       padding: 0;
+      // min-width: fit-content
     }
   }
 }

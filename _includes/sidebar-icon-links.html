@@ -2,28 +2,28 @@
   {% if site.repo %}
     <a id="github-link"
        class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.repo }}">
+       href="{{ site.repo }}" target="_blank">
       {% include svg/github.svg %}
     </a>
    {% endif %}
    {% if site.linkedin %}
      <a id="linkedin-link"
         class="icon" title="Linkedin" aria-label="Linkedin"
-        href="{{ site.linkedin }}">
+        href="{{ site.linkedin }}" target="_blank">
        {% include svg/linkedin.svg %}
      </a>
     {% endif %}
    {% if site.download %}
     <a id="github-download-link"
        class="icon" title="Download" aria-label="Download"
-       href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
+       href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip" target="_blank">
       {% include svg/download.svg %}
     </a>
   {% endif %}
 
   <a id="Hydeout-link"
      class="icon" title="Jekyll Hydeout Page Layout" aria-label="Hydeout Jekyll"
-     href="{{ site.hydeoutlink }}">
+     href="{{ site.hydeoutlink }}" target="_blank">
     {% include svg/question.svg %}
   </a>
 

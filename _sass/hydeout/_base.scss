@@ -67,8 +67,19 @@ img {
     margin: auto;
 }
 
+.imginpost {
+  float:right;
+  margin: auto;
+  margin-left: 10px;
+  max-width: -webkit-fill-available;
+}
+
 .afooter{
   overflow: hidden
+}
+
+.ppost {
+  word-break: word-break;
 }
 
 
