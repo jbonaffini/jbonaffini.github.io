@@ -219,6 +219,7 @@ body {
       0;
     padding-right: 6rem;
     padding-left: 4rem;
+    margin-right: 2rem;
 
     @if $layout-reverse {
       margin-right: $sidebar-width;
