@@ -10,18 +10,18 @@
 
    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-    var myPix = new Array("/images/plateau_bot.jpg"
-        ,"/images/banner_bot.jpg"
-        ,"/images/palisade_bot.jpg"
-        ,"/images/dome_bot.jpg")
+    var myPix = new Array("{{ site.imagesdir }}plateau_bot.jpg"
+        ,"{{ site.imagesdir }}banner_bot.jpg"
+        ,"{{ site.imagesdir }}/palisade_bot.jpg"
+        ,"{{ site.imagesdir }}dome_bot.jpg")
 
 
    } else {
 
-    var myPix = new Array("/images/plateau_side2.jpg"
-        ,"/images/banner_side2.jpg"
-        ,"/images/palisade_side2.jpg"
-        ,"/images/dome_side2.jpg")
+    var myPix = new Array("{{ site.imagesdir }}plateau_side2.jpg"
+        ,"{{ site.imagesdir }}banner_side2.jpg"
+        ,"{{ site.imagesdir }}palisade_side2.jpg"
+        ,"{{ site.imagesdir }}dome_side2.jpg")
 
    }
 

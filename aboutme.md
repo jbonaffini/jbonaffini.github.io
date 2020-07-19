@@ -7,7 +7,7 @@ sidebar_sort_order: 1
 
 <!-- ![](/images/headshot_bonaffini.jpg) -->
 <p class="ppost">
-<img class="imginpost" src="/images/headshot_bonaffini.jpg" style="width:300px" />
+<img class="imginpost" src="{{ site.imagesdir }}headshot_bonaffini.jpg" style="width:300px" />
 
 Hi, I'm James Bonaffini, a Biomedical Engineer aspiring to a fulfilling life by learning always,
 challenging myself to new experiences, and applying my skills in
@@ -27,7 +27,7 @@ Virginia as a Systems Engineer and worked on a variety of legacy and modern syst
 After working for several years, I left LM in the summer of 2018 to find my
 next career step.  I planned a month-long backpacking trip in the Sierra
 Mountain Range, hiking the 200+ mile <a href="https://en.wikipedia.org/wiki/John_Muir_Trail">John Muir Trail</a> with one of my best
-<img class="imginpost" src="/images/jmt.jpg" style="width:400px;" />
+<img class="imginpost" src="{{ site.imagesdir }}jmt.jpg" style="width:400px;" />
 friends from UVA.  Upon my return, I set to work learning other technologies
 of interest, including machine learning and python, while applying to
 jobs in the BME field.  In December 2018, I received an email from my alma mater
