@@ -2,6 +2,7 @@
 title: An Analysis Of The US Opiate Crisis
 layout: post
 category: projects
+date: 2020-07-19
 excerpt_separator: <!--more-->
 ---
 
@@ -70,8 +71,8 @@ clinical knowledge to further extract information.  First, we found the labeling
 each of the 250 feature columns to be unwieldy, so we organized them into categories.  In this list
 of 250 drugs, there were 11 opiates; most of them should look pretty familiar.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}drug_types.png" style="width:70%;" />
-    <img class="imginpostcenter" src="{{ site.imagesdir }}opiates.png" style="width:30%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/drug_types.png" style="width:70%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/opiates.png" style="width:30%;" />
 </p>
 We also cleaned up the variety of credential variation so that they could be organized into Doctor,
 Nurse (mostly Nurse Practitioners in this case),
@@ -103,7 +104,7 @@ population, their data may constitute outliers, wherein extenuating circumstance
 Therefore, this breakdown makes sense, with about 80% (about 20,000 rows) of the clinician population being doctors
 and the remainder being Nurses or Physician Assistants.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}clinician_types.png" style="width:40%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/clinician_types.png" style="width:40%;" />
 </p>
 In further analysis of how much clinicians prescribed opiates, I decided to disregard the "Pharmacist" and "Other"
 categories because they composed a small section of the prescriber population.  Based upon the differences between
@@ -111,22 +112,22 @@ the mean and median prescription values of opiates, I assumed that we were going
 the average numbers of prescriptions per year higher.  As you can see, median prescriptions by Nurses and PAs are
 0 and only 10 among doctors, while means are as high as 90 prescriptions per year.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}mean_opiate.png" style="width:30%;" />
-    <img class="imginpostcenter" src="{{ site.imagesdir }}median_opiate.png" style="width:30%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/mean_opiate.png" style="width:30%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/median_opiate.png" style="width:30%;" />
 </p>
 When limiting the analysis to clinicians who have filled more than 10 prescriptions over the course of the year,
 most of the PA population is eliminated.  Here I have switched to clinician counts instead of percentages. About
 half of clinicians in this dataset filled more than 10 opiate prescriptions over the course of the year.  
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}clinician_opiates.png" style="width:40%;"/>
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/clinician_opiates.png" style="width:40%;"/>
 </p>
 Re-examining the mean and median prescriptions, we found that the numbers of prescribed opiates climbed steeply.
 Average prescriptions increased by about 100% for doctors and nurses while median prescription values climbed
 by 50 prescriptions per year.  Thus, clinicians who prescribe opiates to begin with tend to prescribe them in
 large quantities.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}mean_opiate10.png" style="width:30%;" />
-    <img class="imginpostcenter" src="{{ site.imagesdir }}median_opiate10.png" style="width:30%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/mean_opiate10.png" style="width:30%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/median_opiate10.png" style="width:30%;" />
 </p>
 
 Just because it's interesting, I also wanted to view the most prolific prescribers of opiates.  Unsurprisingly,
@@ -134,7 +135,7 @@ Pain Management, Rehabilitation, and Anesthesiology Physicians topped the list. 
 during the course of a year, an Interventional Pain Management Doctor from Florida was our top prescriber in this
 dataset.  Also, several other Floridian doctors found their way into the top 20 prescribers, as you can see below:
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}top20_opiate.png" style="width:55%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/top20_opiate.png" style="width:55%;" />
 </p>
 This does seem surprising due to the sheer number of prescriptions, but one must remember that opioids are some
 physicians' bread and butter when it comes to therapy.  This class of drugs is extremely effective at suppressing
@@ -154,13 +155,13 @@ states ranked highest among the number of opiates prescribed, but only Tennessee
 among deaths.  West Virginia ranked the highest, with nearly 34 deaths per 100,000 citizens and while only ranking
 18th among the average number of opiates prescribed.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}state_stats.png" style="width:82%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/state_stats.png" style="width:82%;" />
 </p>
 We realized that the most illustrious prescribers of opiates might push average values higher, so we ranked
 by median numbers of opiates prescribed.  However there were similar results: the highest median numbers
 of prescribed opiates did not correlate to the worst death rates.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}state_stats_med.png" style="width:95%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/state_stats_med.png" style="width:95%;" />
 </p>
 
 <h3>Processing Outputs & Visualization</h3>
@@ -171,13 +172,13 @@ Training and Test sets, respectively.  The input variables were composed of the 
 clinician specifics and their prescription habits split into drug classes.  We used the number of deaths for
 100,000 people in each clinician's state as the response variable.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}hist_statedeaths.png" style="width:50%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/hist_statedeaths.png" style="width:50%;" />
 </p>
 We found through various methods of regression (AIC, BIC, Ridge, Lasso) that most of the
 contribution to predictions were from the regression intercept with very little variance
 in the predicted response.  Almost all of our mean squared error landed just above 20.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}regression_out.png" style="width:20%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/regression_out.png" style="width:20%;" />
 </p>
 
 From this output we decided to move on to unsupervised learning techniques because we realized we understood
@@ -188,7 +189,7 @@ is some structurally different behavior occurring between different groups of cl
 in the grouping of more or less than 500 opiates prescribed.  Please note that the axes on these
 graphs are notional and have no real units since PCA is simply an evaluation of variance between features.
 <p style="display: flex; justify-content:center;">
-    <img class="imginpostcenter" src="{{ site.imagesdir }}pca_opiates.png" style="width:50%;" />
+    <img class="imginpostcenter" src="{{ site.imagesdir }}/opiates/pca_opiates.png" style="width:50%;" />
 </p>
 
 <h3>Conclusions</h3>

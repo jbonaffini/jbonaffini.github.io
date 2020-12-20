@@ -11,7 +11,7 @@ sidebar_sort_order: 1
 
 Hi, I'm James Bonaffini, a Biomedical Engineer aspiring to a fulfilling life by learning always,
 challenging myself to new experiences, and applying my skills in
-clinical product design for the greatest patient impact.<br><br>
+clinical product design and biomedical data analysis for the greatest patient impact.<br><br>
 
 I grew up and went school in the Northern Virginia area.  I attended college
 at the University of Virginia in Charlottesville, a city that I would
@@ -44,8 +44,8 @@ infection in Peritoneal Dialysis (PD) patients, since many patients will be tran
 to home PD due to the AAKH Executive Order.
 <br><br>
 During the summer of 2020, I worked as an Engineering design intern at Luminoah, a new
-startup in Charlottesville focusing on Enteral Nutrition technologies.  I will
-finish my program after the Fall 2020 semester at UVA, after rounding out some of
+startup in Charlottesville focusing on Enteral Nutrition technologies.  I
+completed my Master of Engineering program in December 2020 through a final design review and presentation, rounding out some of
 the design, data science, and engineering skills that are most relevant in Clinical
 Engineering. I hope to open my life's next chapter by utilizing my skills to make the greatest
 patient-focused impact in the medical product industry.  
@@ -77,7 +77,7 @@ Skills: MATLAB, image processing and segmentation, some C++
 <h3>Education</h3>
 University of Virginia<br>
 M.Eng. in Biomedical Engineering<br>
-Expected Graduation December 2020
+Graduated December 2020
 <br>
 
 University of Virginia<br>
